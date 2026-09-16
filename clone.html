@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Fredoka:wght@300..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .nyka{
+            display:flex;
+            flex-direction: row;
+            height:100vh;
+        }
+        .left{
+             align-items:center;
+            justify-content:center ;
+            background-color:rgb(227, 123, 141);
+            width:50%;
+            flex-direction: column;
+            display:flex;
+        }
+        .right{
+            display:flex;
+             align-items:center;
+            justify-content:center;
+            width:50%;
+            
+            flex-direction:column;
+            gap:15px;
+        }
+        .right input{
+            width:250px;
+            height:35px;
+            border: 1px solid #ccc;
+        }
+        .right button{
+            width:250px;
+            height:40px;
+            
+            border-radius:10px;
+            background-color: rgb(227, 123, 141);
+            color: white;
+            font-weight: bold;
+        }
+        .right button:hover{
+            color:black;
+            background-color:pink;
+        }
+       
+.left h1 {
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="nyka">
+    <div class="left">
+        <h1>NYKAA</h1>
+        <h2>SELLER PORTAL</h2>
+    </div>
+    <div class="right">
+        <h1>Log In</h1>
+        <div>Enter your registered email id below to login</div>
+        <input type="email" placeholder="Email ID">
+        <button type="submit">Login to Nykaa</button>
+        <p>By signing in, you agree to our T&C and Privacy Policy</p>
+    </div>
+    </div>
+</body>
+</html>
