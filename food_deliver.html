@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodie Orderings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Comic+Relief:wght@400;700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Fredoka:wght@300..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:peachpuff;
+            height:100vh;
+        }
+        .foodie{
+            display:flex;
+            flex-direction:row;
+            height:100vh;
+        }
+        .left{
+            width:50%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+        .right{
+            width:50%;
+            justify-content:center;
+            align-items:center;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+        .right button{
+            border-radius:10px;
+            height:40px;
+            width:80px;
+        }
+        .left:hover{
+            background-color:rgb(255, 160, 78);
+            transition:background-color;
+            transition-duration:5s;
+        }
+        .right:hover{
+            background-color:rgb(143, 104, 71);
+            transition:background-color;
+            transition-duration:5s;
+        }
+        .right button:hover{
+            background-color: rgb(194, 179, 160);
+            color:rgb(237, 247, 247);
+            border-radius:10px;
+            cursor: pointer;
+        }
+        .left h2{
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.right input{
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    </style>
+</head>
+<body>
+    <div class="foodie">
+        <div class="left">
+            <h1>FOODIE</h1>
+            <h2>Fresh food, delivered fast</h2>
+        </div>
+        <div class="right">
+            <h1>Welcome back</h1>
+            <h1>Login to continue</h1>
+            <input type="email" placeholder="enter your email" required autocomplete="on" autofocus>
+            <input type="password" required placeholder="enter your password">
+            <button type="submit">Login</button>
+            <h4>Forgot Password?</h4>
+        </div>
+    </div>
+</body>
+</html>

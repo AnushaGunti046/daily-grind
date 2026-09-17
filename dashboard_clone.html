@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body h1{
+        display:flex;
+        gap:6px;
+        height:100%;
+        width:100%;
+       }
+       .developer{
+        color:red;
+       }
+       fieldset{
+        border-radius:10px;
+       }
+       .box{
+        display:flex;
+        flex-direction:row;
+       }
+       fieldset div{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        border-radius:7px;;
+       }
+       input{
+        border-radius:8px;
+        height:35px;
+       }
+       button{
+        background-color:yellow;
+        height:25px;
+        cursor: pointer;
+        border-width:0;
+        height:35px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Amazon <div class="developer"> Developer</div></h1>
+    <div class="box">
+        <fieldset>
+        <h3>Sign in</h3>
+        <h4>Enter mobile number or email</h4>
+        <div>
+        <input type="text" autofocus="on" autocomplete>
+        <button type="submit">Continue</button>
+        </div>
+        <h5>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</h5>
+        <h5>JP Alexa developers should create an account on Amazon.co.jp first.</h5>
+        <h4>Need Help??</h4>
+        </fieldset>
+    </div>
+</body>
+</html>
